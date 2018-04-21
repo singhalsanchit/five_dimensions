@@ -2,19 +2,13 @@
 <html>
     <head>
         <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/slick.css">
-        <link rel="stylesheet" href="css/slick-theme.css">
-        <link rel="stylesheet" href="css/main.css">
+        
     </head>
     <body>
         <header></header>
         <main>
             <section class="herosection">
-                <img src="images/banner-blue-shade.png" alt=""  class="header-top-img">
+                <%= image_tag("banner-blue-shade.png",class: "header-top-img") %>
                 <div class="herosection-slider">
                     <div class="slide-item slide1"></div>
                     <div class="slide-item slide2"></div>
@@ -22,9 +16,10 @@
                     <div class="slide-item slide4"></div>
                     <div class="slide-item slide5"></div>
                 </div>
-                <a class="logoOnBanner" href="https://www.fourthwallevents.com/" title="Fourth Wall Events">
-                    <img src="images/logo.png" alt="Fourth Wall Events">
-                </a>
+                <div class="logoOnBanner">
+                    <%= image_tag("logo.png") %>
+                </div>
+               
                 <div class="text-slider-section">
                     <div class="herotitle">
                         <h1>Make Great Things Happen</h1>
@@ -36,47 +31,46 @@
                 <div class="container">
                     <div class="client-slide">
                         <div class="client-sideitem">
-                            <img src="images/Showtime-Logo.png" alt="Showtime">
+                            <%= image_tag("Showtime-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/c-logo-5.jpg" alt="pepsico">
+                            <%= image_tag("c-logo-5.jpg") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/London-Partners-Logo.png" alt="London-Partners">
-                        </div>
-
-                        <div class="client-sideitem">
-                            <img src="images/Delta-Logo.png" alt="Delta">
+                            <%= image_tag("London-Partners-Logo.png") %>                            
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/HBO-Logo.png" alt="HBO">
+                            <%= image_tag("Delta-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/IBM-Logo-1.png" alt="IBM">
+                            <%= image_tag("HBO-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/ELC_logo_new.png" alt="ELC_logo">
+                            <%= image_tag("IBM-Logo-1.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Tourism-Toronto-Logo.png" alt="Tourism-Toronto">
+                            <%= image_tag("ELC_logo_new.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Verizon_v2.png" alt="Verizon">
+                            <%= image_tag("Tourism-Toronto-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/MAC-Logo.png" alt="mac">
+                            <%= image_tag("Tourism-Toronto-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Twitter-Logo.png" alt="Twitter">
+                            <%= image_tag("Verizon_v2.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Twitter-Logo.png" alt="Twitter">
+                            <%= image_tag("Twitter-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Sikorsky-Logo-1.png" alt="Sikorsky">
+                            <%= image_tag("Tourism-Toronto-Logo.png") %>
                         </div>
                         <div class="client-sideitem">
-                            <img src="images/Toyota-Logo.png" alt="Toyota">
+                            <%= image_tag("Sikorsky-Logo-1.png") %>
+                        </div>
+                        <div class="client-sideitem">
+                            <%= image_tag("Toyota-Logo.png") %>
                         </div>
                     </div>
                 </div>
@@ -130,29 +124,19 @@
                     </h2>
                     <ul>
                         <li class="design">
-                            <a href="/event-design/">
-                                <img src="images/Icon_Design.png">
-                            </a>
+                          <%= image_tag("Icon_Design.png") %>
                         </li>
                         <li>
-                            <a href="/event-production/">
-                                <img src="images/Icon_Production.png">
-                            </a>
+                          <%= image_tag("Icon_Production.png") %>
                         </li>
                         <li class="logistics">
-                            <a href="/event-planning/">
-                                <img src="images/Icon_MeetingPlanning.png">
-                            </a>
+                          <%= image_tag("Icon_MeetingPlanning.png") %>
                         </li>
                         <li class="half">
-                            <a href="/event-sourcing/">
-                                <img src="images/Icon_Sourcing.png">
-                            </a>
+                          <%= image_tag("Icon_Sourcing.png") %>
                         </li>
                         <li class="half">
-                            <a href="/destination-management/">
-                                <img src="images/Icon_DM.png">
-                            </a>
+                          <%= image_tag("Icon_DM.png") %>
                         </li>
                     </ul>
                 </div>
@@ -196,18 +180,8 @@
             </section>
             <section class="two-sections">
                 <div class="clearfix">
-
-                    <div class="col-md-6 bg-left">
-                        <div class="half-left">
-                            <h3 class="widget-title">Connect &amp; Engage</h3>
-                            <iframe width="1170" height="658" src="https://www.youtube.com/embed/-oTCR1YhLnk?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" id="_dytid_6739"></iframe>
-                            <div class="half-left-text">
-                                At Fourth Wall Events, we are much more than the facilitator of your idea—we are your partner. Working hand in hand with you every step of the way, our #1 goal is to deliver what you expect, more brilliantly than you could have imagined—on time and on budget.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 bg-right">
-                        <div class="half-right">
+                    <div>
+                        
                             <h3 class="widget-title">Our Latest Events</h3>
                             <h4 class="entry-title">
                                 <a href="https://www.fourthwallevents.com/complete-event-planning-services-all-under-one-roof/" rel="bookmark">
@@ -218,38 +192,13 @@
                                 <p>
                                     While other firms are typically production or logistics companies, Fourth Wall Events is a one-stop shop offering the full array of event-planning services: planning, design, production, and management. Backed by our dynamic team of experienced professionals, we offer complete, beginning-to-end delivery of every aspect of your event—along with the management know-how to seamlessly coordinate a
                                     <a href="https://www.fourthwallevents.com/complete-event-planning-services-all-under-one-roof/" class="excerpt">[…]</a>
-
                                 </p>
-                                <a href="https://www.fourthwallevents.com/complete-event-planning-services-all-under-one-roof/" class="read-more">READ MORE <i class="fa fa-angle-right"></i></a>
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
-            <section class="blog">
-                <div class="container">
-                    <h2 class="block-title">
-                        Blogs
-                    </h2>
-                    <ul class="blog-list">
-                        <li class="blog-list-item clearfix">
-                            <a href="" class="blog-left-img">
-                                <img width="350" height="350" src="images/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process.jpg" class="attachment-sydney-medium-thumb size-sydney-medium-thumb wp-post-image" alt="" srcset="https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process.jpg 350w, https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-150x150.jpg 150w, https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-300x300.jpg 300w, https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-230x230.jpg 230w" sizes="(max-width: 350px) 100vw, 350px"> </a>
-                            <div class="blog-detail">
-                               <h4 class="entry-title"><a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" rel="bookmark">8 Steps to Starting a Strategic Meetings Management Program</a></h4> <span><i class="fa fa-clock-o"></i> &nbsp;&nbsp;April 11, 2018</span><p></p><p>Strategic meetings management programs are helping businesses get the most out of their meetings. The hardest part of strategic meetings management is getting started. If you’re interested in starting a program, there are eight steps that will help get you going in the right direction. Once you’ve created a program that’s easy to implement and<a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" class="excerpt">[…]</a><a></a></p><p></p><a> </a><a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" class="white-rounded-bt">Read This Blog <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </li>
-                        <li class="blog-list-item clearfix">
-                            <a href="" class="blog-left-img">
-                                <img width="350" height="350" src="images/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process.jpg" class="attachment-sydney-medium-thumb size-sydney-medium-thumb wp-post-image" alt="" srcset="https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process.jpg 350w, images/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-150x150.jpg 150w, https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-300x300.jpg 300w, https://www.fourthwallevents.com/wp-content/uploads/2018/04/Why-You-Need-a-Professional’s-Help-During-the-Event-Planning-Process-230x230.jpg 230w" sizes="(max-width: 350px) 100vw, 350px"> </a>
-                            <div class="blog-detail">
-                               <h4 class="entry-title"><a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" rel="bookmark">8 Steps to Starting a Strategic Meetings Management Program</a></h4> <span><i class="fa fa-clock-o"></i> &nbsp;&nbsp;April 11, 2018</span><p></p><p>Strategic meetings management programs are helping businesses get the most out of their meetings. The hardest part of strategic meetings management is getting started. If you’re interested in starting a program, there are eight steps that will help get you going in the right direction. Once you’ve created a program that’s easy to implement and<a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" class="excerpt">[…]</a><a></a></p><p></p><a> </a><a href="https://www.fourthwallevents.com/8-steps-to-starting-a-strategic-meetings-management-program/" class="white-rounded-bt">Read This Blog <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </section>
+            
             <section class="testimonial-section">
                 <div class="container">
                     <h2 class="block-title">testimonials</h2>
@@ -461,18 +410,19 @@
                                 <span>
                                     <i class="fa fa-phone"></i>
                                 </span>
-                                <a href="tel:877.384.4077">877.384.4077</a></div></aside></div><div class="sidebar-column col-md-2"><aside id="text-4" class="widget widget_text"><div class="textwidget">
-                                <a href="#" class="white-rounded-bt locateUs"><i class="fa fa-map-marker"></i>locate us</a></div></aside></div></div>
+                                <a href="tel:877.384.4077">877.384.4077</a>
+                            </div>
+                        </aside>
+                    </div>
+                    
             </div>
             <div class="copy-right">
                 <div class="site-info container">
-                    © 2016 Fourth Wall Events
+                    © 2018 Five Dimensions Events 
                 </div>
             </div>
         </footer>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/slick.min.js"></script>
+        
         <script>
             $(document).ready(function () {
                 $(window).resize(function () {

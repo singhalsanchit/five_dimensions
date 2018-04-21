@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @font-face{
     font-family:'chaletmedium';
-    src:url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.eot);
-    src:url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.woff2) format('woff2'),
-        url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.woff) format('woff'),
-        url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.ttf) format('truetype'),
-        url(../fonts/chalet-new-york-nineteen-eighty-1361536090-webfont.svg#chaletmedium) format('svg');
+    src:url(chalet-new-york-nineteen-eighty-1361536090-webfont.eot);
+    src:url(chalet-new-york-nineteen-eighty-1361536090-webfont.eot?#iefix) format('embedded-opentype'),
+        url(chalet-new-york-nineteen-eighty-1361536090-webfont.woff2) format('woff2'),
+        url(chalet-new-york-nineteen-eighty-1361536090-webfont.woff) format('woff'),
+        url(chalet-new-york-nineteen-eighty-1361536090-webfont.ttf) format('truetype'),
+        url(chalet-new-york-nineteen-eighty-1361536090-webfont.svg#chaletmedium) format('svg');
     font-weight:normal;
     font-style:normal;
 }
@@ -40,23 +40,23 @@ body {
     height: 100%;    
 }
 .slide-item.slide1{
-    background: url(../images/slider-img-1-1.jpg) no-repeat center center;
+    background: url(slider-img-1-1.jpg) no-repeat center center;
     background-size: cover;
 }
 .slide-item.slide2{
-    background: url(../images/Slider_4.jpg) no-repeat center center;
+    background: url(Slider_4.jpg) no-repeat center center;
     background-size: cover;
 }
 .slide-item.slide3{
-    background: url(../images/Slider_6.jpg) no-repeat center center;
+    background: url(Slider_6.jpg) no-repeat center center;
     background-size: cover;
 }
 .slide-item.slide4{
-    background: url(../images/5.jpg) no-repeat center center;
+    background: url(5.jpg) no-repeat center center;
     background-size: cover;
 }
 .slide-item.slide5{
-    background: url(../images/001_4thwall_0012.jpg) no-repeat center center;
+    background: url(001_4thwall_0012.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -217,7 +217,7 @@ body {
 }
 
 .work-circle{
-    background: url(../images/gray-bg-new.jpg) no-repeat center center;
+    background: url(gray-bg-new.jpg) no-repeat center center;
     background-size: cover;
     padding: 100px 0;text-align: center;
 }
@@ -558,7 +558,7 @@ footer .copy-right{
     line-height: 33px;
 }
 .two-sections{
-    background: #e4e4e4 url(../images/blue-bg.png) no-repeat left center;
+    background: #e4e4e4 url(blue-bg.png) no-repeat left center;
     background-size: 50% 100% !important;
 }
 .entry-summary p{
@@ -580,7 +580,7 @@ footer .copy-right{
     margin-left: 10px;
 }
 .blog{
-    background: url(../images/pink-bg.png) no-repeat center center;
+    background: url(pink-bg.png) no-repeat center center;
     background-size: cover;
 }
 .blog{
@@ -659,7 +659,7 @@ footer .copy-right{
 .testimonial-section{
     text-align: center;
     padding: 100px 0;
-    background: url(../images/dark-gray-bg.png) no-repeat center center;
+    background: url(dark-gray-bg.png) no-repeat center center;
     background-size: cover;
 }
 .testimonial-section .block-title{color: #fff; margin-bottom: 50px;font-size: 50px;padding-bottom: 0;}
