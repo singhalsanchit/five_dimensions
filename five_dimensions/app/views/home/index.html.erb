@@ -357,7 +357,18 @@
             <section class="googleMap">
                 <div id="googleMapPlaceHolder"></div>
                 <div class="container">
-                    <h2 class="block-title">CONTACT us</h2>
+                    <h2 class="block-title">Write Us</h2>
+                    <div>
+                      <%= form_tag("/send_request", method: "post") do %>
+                        <%= label_tag(:name, "Your Name") %>
+                        <%= text_field_tag :name,"Your Name", :class => "form-control" %>
+                        <%= label_tag(:email, "Your Email") %>
+                        <%= text_field_tag :email, "Your Email", :class => "form-control" %>
+                        <%= label_tag(:message, "Message") %>
+                        <%= text_area_tag :message, "Hi, please write your message here!", size: "24x6", :class => "form-control" %>
+                        <%= submit_tag("Send Request") %>
+                      <% end %>
+                    </div>
                 </div>
             </section>
         </main>
