@@ -40,7 +40,7 @@ body {
     height: 100%;    
 }
 .slide-item.slide1{
-    background: url(slider-img-1-1.jpg) no-repeat center center;
+    background: url(wedding2.jpg) no-repeat center center;
     background-size: cover;
 }
 .slide-item.slide2{
@@ -186,6 +186,7 @@ body {
 }
 .corporate-events{
     padding-bottom: 100px;
+    margin-top: 60px;
 }
 .what{
     background: #f0f4f5;text-align: center;
@@ -738,4 +739,12 @@ footer .copy-right{
 }
 sow-google-map-2{
     
+}
+.text-fields{
+    width: 350px !important;
+}
+.submit-btn{
+    margin-left: 105px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
