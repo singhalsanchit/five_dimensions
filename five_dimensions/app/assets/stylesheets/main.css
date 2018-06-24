@@ -319,7 +319,6 @@ body {
 .work-circle ul li:hover {
     transform: scale(1.5) rotateY(180deg);
     z-index: 999;
-    background: none;
 }
 .work-circle ul li .back a {
     line-height: 22px;
@@ -411,6 +410,7 @@ body {
     padding: 35px 0;
     background-color: #3fa4d8;
     color: #fff;
+    padding-bottom: 0;
 }
 .footer-top span{
     width: 25px;
@@ -420,7 +420,6 @@ body {
 .footer-title{
     text-transform: none;
     font-size: 22px;
-    float: left;
     width: 100%;
     padding-bottom: 0;
     line-height: normal;
@@ -724,27 +723,81 @@ footer .copy-right{
 .testimonial-section .slick-dots li.slick-active button{
     background:  #999999;
 }
-.googleMap{
-    padding-top: 70px;
-    border-top: 1px solid #dadada;
-    text-align: center;
-        margin-bottom: 50px;
-            display: table;
-    width: 100%;
-    position: relative;
-    height: 660px;
+.submit-btn-mgbt30{
+    margin-bottom: 30px;
 }
-#googleMapPlaceHolder{
-    
+.form-control{
+    border-radius: 0;
+    box-shadow: none;
 }
-sow-google-map-2{
-    
+@media(min-width:992px) and (max-width: 1199px){
+    .icons-large ul li img{width: 150px;}
+    .text-slider-section{top: 86%;min-height: 150px;}
+    .icons-large ul{margin-bottom: 0;}
+    .work-circle ul li.blue{left: 0;}.work-circle ul li.right{left: 60%;}
+    .work-circle ul li.blue-light{left: 46%;z-index: 9999;}
 }
-.text-fields{
-    width: 350px !important;
+@media(min-width:768px) and (max-width: 991px){
+    .text-slider-section{min-height: 175px;top: 84%;}
+    .icons-large ul li{width: 20%;}
+    .icons-large ul li img{width: 125px;}
+    .icons-large ul{margin-bottom: 0;}
+    .work-circle ul{padding: 0;}
+    .work-circle ul li.left{left: 75px;width: 200px;height: 200px;}
+    .work-circle ul li.blue{left: 0;}
+    .work-circle ul li.right{right: 75px;left: initial;width: 200px;height: 200px;}
+    .work-circle ul li:first-child{transform: translateX(-50%);left: 50%;}
+    .work-circle ul li.pink{width: 180px;height: 180px;}
 }
-.submit-btn{
-    margin-left: 105px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+@media(max-width:767px){
+    .icons-large ul{margin:0;}
+    .block-title{    font-size: 40px;}
+    .corporate-events{padding-bottom: 60px;}
+    .what,.work-circle{padding: 60px 0;}
+    .icons-large ul li{width: 50%;}
+    .icons-large ul li img{width: 200px;}
+    .icons-large ul li:last-child{width:100%;}
+    .work-circle ul{padding: 0;}
+    .work-circle ul li{left: 50%;transform: translateX(-50%);}
+    .work-circle ul li.blue, .work-circle ul li.pink{transform: none;left: initial;}
+    .sydney_contact_info_widget{margin-bottom: 30px;}
+    .work-circle ul li.blue, .work-circle ul li.pink{width:175px;height: 175px;}
+}
+@media(min-width:481px) and (max-width: 767px){
+     .work-circle ul li.pink{right: 0}
+     .work-circle ul li{width:350px; height: 350px;}
+     .work-circle ul li.blue, .work-circle ul li.pink{top:-30px;}
+     .work-circle ul li.left{left: 0;transform: none;width: 200px;height: 200px;top: 35%;}
+     .work-circle ul li.green{top: 60%;}
+     .work-circle ul li.right{width: 200px;height: 200px;}
+     .work-circle ul li:hover{transform: scale(1) rotateY(180deg) translateX(50%);}
+
+
+}
+@media(max-width:480px){
+    .work-circle ul li.blue{left: 0;top: -85px;}
+    .work-circle ul li.left{left: 0;top: -160px;width: 200px;height: 200px;}
+    .work-circle ul li,.work-circle ul li.blue{height: 210px; width:210px;}
+    .work-circle ul li{position: relative;}
+    .work-circle ul li .front h6{font-size: 20px;}
+    .work-circle ul li{width: 250px;height: 250px;left: 0%; margin:0 auto;}
+    .work-circle ul li:hover{transform: scale(1) rotateY(180deg);}
+    .corporate-events{padding-bottom: 60px;}
+    .text-slider-section{top:90%;}
+    .herotitle h1{font-size: 46px; line-height: 46px;}
+    .logoOnBanner{top: 80px;}
+    .logoOnBanner img{width:200px;}
+    .work-circle ul{padding:0; height: 1050px; margin-top: 20px;}
+    .block-title{font-size: 27px; margin-bottom: 20px;}
+    .icons-large ul{margin-bottom: 0;}
+    .what,.work-circle{padding:50px 0;}
+    .icons-large ul li img{width:100%;}
+    .icons-large ul li{width:50%;margin: 0 0 50px;}
+    .icons-large ul li:last-child{margin-bottom: 0;width: 100%;}
+    .icons-large ul li:last-child img{width: 50%;}
+    .work-circle ul li.green{left: 0;top: -230px;position: relative;}
+    .work-circle ul li.pink{left: 0;top: -295px;}
+    .work-circle ul li.blue-light{left: 0;top: -400px;}
+    .work-circle ul li.right{top: -450px;left: 0;width: 200px;height: 200px;}
+    .sydney_contact_info_widget{margin-bottom: 30px;}
 }
