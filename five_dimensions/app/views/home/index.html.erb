@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>TODO supply a title</title>
-        
     </head>
     <body class="body-main">
         <header></header>
@@ -19,14 +18,13 @@
                 <div class="logoOnBanner">
                     <%= image_tag("logo.png") %>
                 </div>
-               
                 <div class="text-slider-section">
                     <div class="herotitle">
                         <h1>Be Guest At Your Event</h1>
                     </div>
                 </div>
             </section>
-            <section class="corporate-events">
+            <section class="corporate-events text-center">
                 <div class="container">
                     <h2 class="block-title">
                         Events And Meeting Planning Company
@@ -42,7 +40,7 @@
                             <span style="font-weight: 400;">
                                 5 Dimensions Events is your start to finish corporate meeting and events partner. &nbsp;We handle it all for you: 
                             </span>
-                            <span style="font-weight: 400;">meeting and event design</span>                 
+                            <span style="font-weight: 400;">meeting and event design</span>
                             <span style="font-weight: 400;">, </span>
                             <span style="font-weight: 400;"> wedding planning</span>
                             <span style="font-weight: 400;">, </span>
@@ -53,7 +51,6 @@
                             </span>
                             <span style="font-weight: 400;">destination management</span><span style="font-weight: 400;">.</span></p><p><span style="font-weight: 400;">At 5 Dimensions we focus on helping you use events to&nbsp;achieve your&nbsp;strategic business goals. &nbsp;We take your event inspiration and make it come to life. &nbsp;Our team&nbsp;members&nbsp;are corporate meeting and event experts who manage every detail so that your event is flawless.</span></p><p><span style="font-weight: 400;">To get started on making your next event one <b>remember to call us at 8587860180/8826060971 or mail us at events@5dimensions.co.in</b>
                         </p>
-
                     </div>
                 </div>
             </section>
@@ -116,7 +113,6 @@
                           <span class="side front"><h6>Roadshows</h6></span> <span class="side back" style="padding-top:20%;"><h6>Roadshows</h6><br><br></span></li><li class="pink"> <span class="side front"><h6>Product Launches</h6></span> <span class="side back" style="padding-top:33%;"><h6>Product Launches</h6><br><br></span></li><li class="blue-light"> <span class="side front"><h6>Galas</h6></span> <span class="side back" style="padding-top:20%;"><h6>Galas</h6><br><br></span></li><li class="right"> <span class="side front"><h6>Experiential Events</h6></span> <span class="side back" style="padding-top:33%;"><h6>Experiential Events</h6><br><br></span></li></ul>
                 </div>
             </section>
-
             <!-- <section class="connect-us">
                 <div class="container">
                     <h2 class="block-title">STAY CONNECTED</h2>
@@ -142,11 +138,11 @@
                     </div>
                 </div>
             </section> -->
-            
         </main>
         <footer>
             <div class="footer-top">
-              <div class="sidebar-column col-md-5">
+            <div class="container">
+              <div class="sidebar-column col-md-6 col-sm-6">
                   <aside id="sydney_contact_info-2" class="widget sydney_contact_info_widget">
                       <h6 class="footer-title">
                           Corporate Office</a>
@@ -171,20 +167,46 @@
                       </div>
                   </aside>
               </div>
-              <div class="sidebar-column col-md-7">
-                  <div class="container">
+              <div class="sidebar-column col-md-6 col-sm-6">
+                  <div class="">
                     <h6 class="footer-title">Write Us</h6>
-                    <div>
-                      <%= form_tag("/send_request", method: "post") do %>
-                        <%= label_tag(:name, "Your Name") %>
+                    <div class="row">
+                      <%= form_tag("/send_request", method: "post",class: "form-horizontal clearfix") do %>
+                      <div class="col-md-6">
+                      <div class="form-group">
+                      <div class="col-md-12 col-sm-12">
+                          <%= label_tag(:name, "Your Name") %>
                         <%= text_field_tag :name, nil,:placeholder => "Your Name", :class => "form-control text-fields",:required => true %>
+                        </div>
+                        </div>   
+
+                      </div>
+                      <div class="col-md-6">
+                      <div class="form-group">
+                      <div class="col-md-12 col-sm-12">
                         <%= label_tag(:email, "Your Email") %>
                         <%= email_field_tag :email, nil,:placeholder => "Your Email", :class => "form-control text-fields",:required => true %>
-                        <%= label_tag(:message, "Message") %>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                      <div class="form-group">
+                      <div class="col-md-12 col-sm-12">
+                      <%= label_tag(:message, "Message") %>
                         <%= text_area_tag :message, nil,:placeholder => "Hi, please write your message here!", size: "24x6", :class => "form-control text-fields",:required => true %>
-                        <%= submit_tag("Send Request", class: "btn btn-default submit-btn") %>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                      <div class="form-group">
+                      <div class="col-md-12 col-sm-12">
+                        <%= submit_tag("Send Request", class: "btn btn-default submit-btn submit-btn-mgbt30") %>
+                        </div>
+                        </div>
+                      </div>
                       <% end %>
                     </div>
+              </div>
               </div>
             </div>
             <div class="copy-right">
@@ -193,7 +215,6 @@
                 </div>
             </div>
         </footer>
-        
         <script>
             $(document).ready(function () {
                 $(window).resize(function () {
@@ -224,7 +245,6 @@
                 dots: true,
                 autoplay:true
             });
-            
         </script> 
     </body>
 </html>
